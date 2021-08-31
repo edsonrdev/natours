@@ -43,23 +43,23 @@ body {
    background-position: center;
    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
    position: relative;
-}
 
-.header__logo-box {
-   position: absolute;
-   top: 4rem;
-   left: 4rem;
-}
-
-.header__logo {
-   height: 3.5rem;
-}
-
-.header__text-box {
-   position: absolute;
-   top: 40%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+   &__logo-box {
+      position: absolute;
+      top: 4rem;
+      left: 4rem;
+   }
+   
+   &__logo {
+      height: 3.5rem;
+   }
+   
+   &__text-box {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+   }
 }
 
 .heading-primary {
@@ -67,27 +67,29 @@ body {
    text-transform: uppercase;
    backface-visibility: hidden;
    margin-bottom: 3.2rem;
+
+   &--main,
+   &--sub {
+      display: block;
+      text-shadow: 0.2rem 0.2rem 0.4rem rgba($color-green-shadow, 0.3);
+   }
+
+   &--main {
+      font-size: 4.5rem;
+      font-weight: 400;
+      letter-spacing: 2rem;
+      animation: moveToRight 0.8s ease-out 200ms;
+   }
+
+   &--sub {
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 1.24rem;
+      animation: moveToLeft 0.8s ease-out 200ms;
+   }
 }
 
-.heading-primary--main,
-.heading-primary--sub {
-   display: block;
-   text-shadow: 0.2rem 0.2rem 0.4rem rgba($color-green-shadow, 0.3);
-}
 
-.heading-primary--main {
-   font-size: 4.5rem;
-   font-weight: 400;
-   letter-spacing: 2rem;
-   animation: moveToRight 0.8s ease-out 200ms;
-}
-
-.heading-primary--sub {
-   font-size: 1.6rem;
-   font-weight: 700;
-   letter-spacing: 1.24rem;
-   animation: moveToLeft 0.8s ease-out 200ms;
-}
 
 @keyframes moveToRight {
    0% {
@@ -137,63 +139,65 @@ body {
    }
 }
 
-.btn:link {
-   transform: translateX(-1rem);
-}
+.btn {
+   &:link {
+      transform: translateX(-1rem);
+   }
 
-.btn:link,
-.btn:visited {
-   text-transform: uppercase;
-   text-decoration: none;
-   padding: 1.5rem 3rem;
-   font-size: 1.4rem;
-   border-radius: 10rem;
-   transition: all 0.2s;
-   box-shadow: 0 0 1.6rem rgba($color-black, 0.1);
-   position: relative;
-}
+   &:link,
+   &:visited {
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 1.5rem 3rem;
+      font-size: 1.4rem;
+      border-radius: 10rem;
+      transition: all 0.2s;
+      box-shadow: 0 0 1.6rem rgba($color-black, 0.1);
+      position: relative;
+   }
 
-.btn:hover {
-   transform: translate(-1rem, -0.3rem);
-   box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
-}
+   &:hover {
+      transform: translate(-1rem, -0.3rem);
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
 
-.btn:active {
-   transform: translate(-1rem, -0.1rem);
-   box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
-}
+      &::after {
+         transform: scaleX(1.4) scaleY(1.5);
+         opacity: 0;
+      }
+   }
+   
+   &:active {
+      transform: translate(-1rem, -0.1rem);
+      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+   }
 
-.btn--white {
-   background-color: $color-white;
-   color: $color-grey-dark;
-   letter-spacing: 0.1rem;
-   margin: auto;
-   width: max-content;
-   display: block;
-}
+   &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 10rem;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.3s;
+   }
 
-.btn::after {
-   content: "";
-   display: inline-block;
-   height: 100%;
-   width: 100%;
-   border-radius: 10rem;
-   position: absolute;
-   top: 0;
-   left: 0;
-   z-index: -1;
-   transition: all 0.3s;
-}
+   &--white {
+      background-color: $color-white;
+      color: $color-grey-dark;
+      letter-spacing: 0.1rem;
+      margin: auto;
+      width: max-content;
+      display: block;
 
-.btn--white::after {
-   background-color: $color-white;
-}
-
-.btn:hover::after {
-   transform: scaleX(1.4) scaleY(1.5);
-   opacity: 0;
-}
-
-.btn--animated {
-   animation: moveToUp 1s ease-in-out 800ms backwards;
+      &::after {
+         background-color: $color-white;
+      }
+   }
+   
+   &--animated {
+      animation: moveToUp 1s ease-in-out 800ms backwards;
+   }
 }
