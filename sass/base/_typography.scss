@@ -1,7 +1,7 @@
 body {
    font-family: "Lato", sans-serif;
    font-weight: 400;
-   font-size: 1.6rem;
+   font-size: $default-font-size;
    line-height: 1.7;
    color: $color-grey-dark;
 }
@@ -26,7 +26,7 @@ body {
    }
 
    &--sub {
-      font-size: 1.6rem;
+      font-size: $default-font-size;
       font-weight: 700;
       letter-spacing: 1.24rem;
       animation: moveToLeft 0.8s ease-out 200ms;
@@ -46,7 +46,22 @@ body {
    transition: all 0.2s;
 
    &:hover {
-      transform: skewY(4deg) skewX(4deg) scale(1.2);
+      transform: skewY(7deg) scale(1.2);
       text-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+   }
+}
+
+.heading-tertiary {
+   font-size: $default-font-size;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+
+.paragraph {
+   font-style: $default-font-size;
+   font-weight: 500;
+
+   &:not(:last-child) {
+      margin-bottom: 3rem;
    }
 }

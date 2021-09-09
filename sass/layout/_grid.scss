@@ -2,7 +2,7 @@
    max-width: $grid-width;
    margin: 0 auto;
    font-weight: 700;
-   text-align: center;
+   text-align: justify;
 
 
    &:not(:last-child) {
@@ -13,7 +13,6 @@
 
    [class^="col-"] {
       float: left;
-      background-color: lightcoral;
 
       &:not(:last-child) {
          margin-right: $gutter-horizontal;
