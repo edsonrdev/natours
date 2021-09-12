@@ -75,10 +75,10 @@
    }
 
    &:hover {
-      background-color: $color-primary;
       color: $color-white;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
       transform: translateY(-3px);
+      background: linear-gradient(to right, $color-primary-light, $color-primary);
       transition: all 0.2s;
    }
 
