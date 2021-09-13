@@ -65,6 +65,8 @@
    &:link,
    &:visited {
       border-radius: 2px;
+      font-weight: 700;
+      letter-spacing: 1;
       font-size: $default-font-size;
       color: $color-primary;
       display: inline-block;
