@@ -38,14 +38,9 @@
 
       &:hover {
          z-index: 1;
-         border-radius: 1.2rem;
          box-shadow: 0 1rem 3rem rgba($color-black, 0.7);
          outline: 1.2rem solid $color-primary;
          transition: all 0.5s;
       }
-   }
-
-   &:hover &__photo:not(:hover) {
-      transform: scale(0.9);
    }
 }

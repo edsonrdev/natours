@@ -15,5 +15,8 @@
   "homepage": "https://github.com/edsonrdev/natours#readme",
   "devDependencies": {
     "node-sass": "^4.14.1"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
   }
 }
