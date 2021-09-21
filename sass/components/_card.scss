@@ -52,6 +52,7 @@
    &__picture {
       background-size: cover;
       height: 23rem;
+      border-radius: 3px 3px 0 0;
       background-blend-mode: color;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
