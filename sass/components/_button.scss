@@ -1,7 +1,7 @@
 .btn {
-   &:link {
-      transform: translateX(-1rem);
-   }
+   // &:link {
+   //    // transform: translateX(-1rem);
+   // }
 
    &:link,
    &:visited {
@@ -16,7 +16,7 @@
    }
 
    &:hover {
-      transform: translate(-1rem, -.3rem);
+      transform: translateY(-.3rem);
       box-shadow: 0 1rem 2rem $color-black-shadow-1;
 
       &::after {
@@ -26,7 +26,7 @@
    }
    
    &:active {
-      transform: translate(-1rem, -.1rem);
+      transform: translateY(-.1rem);
       box-shadow: 0 .5rem 1rem $color-black-shadow-1;
    }
 

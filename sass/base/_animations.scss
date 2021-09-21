@@ -33,15 +33,15 @@
 @keyframes moveToUp {
    0% {
       opacity: 0;
-      transform: translate(-1rem, 8rem);
+      transform: translateY(8rem);
    }
 
    90% {
-      transform: translate(-1rem, -.3rem);
+      transform: translateY(-.3rem);
    }
 
    100% {
       opacity: 1;
-      transform: translate(-1rem, 0);
+      transform: translateY(0);
    }
 }
