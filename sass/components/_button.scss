@@ -3,6 +3,7 @@
    //    // transform: translateX(-1rem);
    // }
 
+   &,
    &:link,
    &:visited {
       text-transform: uppercase;
@@ -13,6 +14,10 @@
       transition: all .2s;
       box-shadow: 0 0 $default-font-size $color-black-shadow-1;
       position: relative;
+
+      // change form <button> element
+      border: 0;
+      cursor: pointer;
    }
 
    &:hover {
@@ -25,7 +30,9 @@
       }
    }
    
-   &:active {
+   &:active,
+   &:focus {
+      outline: none;
       transform: translateY(-.1rem);
       box-shadow: 0 .5rem 1rem $color-black-shadow-1;
    }
