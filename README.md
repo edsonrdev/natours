@@ -24,7 +24,7 @@ Repository of the Natours project (a website for nature lovers :heart: :seedling
 
 Below is a preview of the project so far:
 
-https://user-images.githubusercontent.com/79758730/131931712-1764d573-5080-44da-93ee-1d8dc3732e06.mp4
+https://vimeo.com/645752264
 
 ## Conclusion
 
