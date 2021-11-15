@@ -24,7 +24,10 @@ Repository of the Natours project (a website for nature lovers :heart: :seedling
 
 Below is a preview of the project so far:
 
-https://vimeo.com/645752264?autoplay=1&quality=1080p
+<video width="100%" controls autoplay muted src="./public/project-preview.mp4">
+   Seu navegador não suporta o elemento de vídeo HTML.
+</video>
+
 ## Conclusion
 
 So guys, let's code together and reach the next level! **#VouSerDev** **#ninguemmesegura** **#nostoplearning**
