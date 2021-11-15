@@ -24,7 +24,7 @@ Repository of the Natours project (a website for nature lovers :heart: :seedling
 
 Below is a preview of the project so far:
 
-<video width="100%" controls autoplay muted src="./public/project-preview.mp4">
+<video width="100%" controls autoplay muted src="https://vimeo.com/645752264">
    Seu navegador não suporta o elemento de vídeo HTML.
 </video>
 
