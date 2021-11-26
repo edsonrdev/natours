@@ -1,8 +1,8 @@
 // natours colors
-
 $color-primary: #55c57a;
 $color-primary-light: #7ed56f;
 $color-primary-dark: #28b485;
+$color-primary-dark-2: #01140d;
 
 $color-secondary-light: #ff9900;
 $color-secondary-dark: #ff7730;
@@ -10,6 +10,7 @@ $color-secondary-dark: #ff7730;
 $color-tertiary-light: #2998ff;
 $color-tertiary-dark: #5643fa;
 
+// other colors
 $color-green-shadow: #006400;
 $color-black-shadow-1: rgba(0, 0, 0, 0.2);
 $color-black-shadow-2: rgba(0, 0, 0, 0.4);
@@ -25,14 +26,12 @@ $color-grey-dark-3: #333;
 $color-black: #000;
 $color-white: #fff;
 
-// font
-
+// fonts
 $small-font-size: 1.4rem;
 $default-font-size: 1.6rem;
 $big-font-size: 2.2rem;
 
-// grid
-
+// grids
 $grid-width: 114rem;
 $gutter-horizontal: 3.6rem;
 $gutter-vertical: 6rem;

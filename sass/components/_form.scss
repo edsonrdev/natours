@@ -20,10 +20,11 @@
       width: 90%;
       display: block;
       transition: all .3s ease;
+      box-shadow: 0 1rem 3rem rgba($color-black, .1);
 
       &:focus {
          outline: none;
-         box-shadow: 0 1rem 2rem rgba($color-black, .1);
+         box-shadow: 0 1rem 3rem rgba($color-black, .2);
          border-bottom-color: $color-primary;
          transition: all .3s ease;
       }
@@ -89,10 +90,7 @@
          border-radius: 50%;
          background-color: $color-primary;
 
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         transform: translate(-50%, -50%);
+         @include absoluteCenter;
          opacity: 0;
          transition: opacity .4s;
       }
